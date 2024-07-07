@@ -1,0 +1,72 @@
+.header {
+    width: 380px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 24px;
+    margin-right: 24px;
+    background-color: white;
+    padding: 10px 0;
+    
+
+    .menu-icon {
+        cursor: pointer;
+        width: 30px;
+        margin-right: auto;
+    }
+
+    .logo {
+        height: 30px;
+
+    }
+
+    .nav {
+        display: flex;
+    }
+    
+    .search-container {
+        display: flex;
+        align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 5px;
+        max-width: 300px; /* adjust as needed */
+        margin: 0 auto; /* center it horizontally if needed */
+        cursor: pointer;
+
+
+        img {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            display: block;
+        }
+
+
+        input[type="text"] {
+            border: none;
+            outline: none;
+            flex: 1;
+            padding: 5px;
+            font-size: 16px; /* adjust font size as needed */
+            background-color: transparent;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border: 1px solid #aaa;
+            border-radius: 4px;
+            border: none
+        }
+    }
+
+    .cart-icon {
+        cursor: pointer;
+    }
+    
+    
+    
+
+}
+
+

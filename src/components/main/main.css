@@ -1,0 +1,25 @@
+.container {
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    .seemore-btn {
+        padding: 1em 3em;
+        border-radius: 10px;
+        border: none;
+        background: #222222;
+        color: white;
+        align-self: center;
+        margin-block: 20px;
+        cursor: pointer;
+        font-size: 1.2rem;
+        opacity: 0.94;
+        cursor: pointer;
+
+        .arrow-icon{
+            align-self: center;
+            margin-left: 5px;
+        }
+    }
+}

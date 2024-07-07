@@ -1,0 +1,21 @@
+.generalcard {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding: 2em;
+
+    .generalcard--item {
+        background-color: white;
+        padding: .8em 1.2em;
+        color: black;
+        border-radius: 100px;
+        border: 1px solid #C1C1C1;
+        
+    }
+
+    .black {
+        background-color: black;
+        color: white;
+    }
+}
