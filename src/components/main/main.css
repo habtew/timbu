@@ -1,8 +1,10 @@
 .container {
-    margin: 20px;
+    /* margin: 20px; */
+    padding: 20px;
 
     display: flex;
     flex-direction: column;
+    background-color: white;
 
     .seemore-btn {
         padding: 1em 3em;

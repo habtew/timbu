@@ -1,0 +1,212 @@
+.similar-items {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    overflow-x: scroll;
+    background-color: white;
+    
+    .similar-card {
+        width: 250px;
+        font-size: 12px;
+        flex: 0 0 auto;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        border: none;
+        border-radius: 10px;
+        border: 1px solid green;
+        padding: 10px;
+
+        .similar-card--image {
+            width: 100%;
+            border-radius: 9px;
+            margin-bottom: 9px;
+            background: #F2F2F2;
+        }
+        
+        .similar-card--title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        .similar-card--stats {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                background-color: white;
+                padding: .8em 1.2em;
+                color: black;
+                border-radius: 100px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        
+        .similar-card--star {
+            height: 14px;
+        }
+        
+        .similar-card--price {
+            margin-top: auto;
+        }
+        
+        .similar-card--badge {
+            position: absolute;
+            top: 20px;
+            left: auto;
+            right: 15px;
+            background-color: white;
+            padding: 5px 7px;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+
+        .similar-card--heart {
+            position: absolute;
+            top: 20px;
+            left: 15px;
+            background-color: white;
+            padding: 5px 7px;
+            border-radius: 2px;
+            font-weight: bold;
+        }
+        .similar-title-container {
+            margin-block: 20px;
+
+            h3 {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            span{
+                font-weight: 100;
+            }
+
+            
+        }
+
+
+        .similar-card--footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            button {
+                background-color: black;
+                color: white;
+                padding: .9em 3em;
+                border-radius: 10px;
+                cursor: pointer;
+            }
+        }
+
+    }
+}
+
+
+@media (min-width: 500px) {
+    .similar-items {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+
+        .similar-card {
+            width: 250px;
+            font-size: 12px;
+            flex: 0 0 auto;
+            display: flex;
+            position: relative;
+            flex-direction: column;
+            border: 1px solid rgb(128, 128, 128, 0.5);
+            border-radius: 10px;
+            border: 1px solid green;
+            padding: 10px;
+    
+            .similar-card--image {
+                width: 100%;
+                border-radius: 9px;
+                margin-bottom: 9px;
+                background: #F2F2F2;
+            }
+            
+            .similar-card--title {
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .similar-card--stats {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                button {
+                    background-color: white;
+                    padding: .8em 1.2em;
+                    color: black;
+                    border-radius: 100px;
+                    border: 1px solid #C1C1C1;
+                    cursor: pointer;
+                }
+            }
+            
+            .similar-card--star {
+                height: 14px;
+            }
+            
+            .similar-card--price {
+                margin-top: auto;
+            }
+            
+            .similar-card--badge {
+                position: absolute;
+                top: 20px;
+                left: auto;
+                right: 15px;
+                background-color: white;
+                padding: 5px 7px;
+                border-radius: 2px;
+                font-weight: bold;
+            }
+    
+            .similar-card--heart {
+                position: absolute;
+                top: 20px;
+                left: 15px;
+                background-color: white;
+                padding: 5px 7px;
+                border-radius: 2px;
+                font-weight: bold;
+            }
+            .similar-title-container {
+                margin-block: 20px;
+    
+                h3 {
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+                span{
+                    font-weight: 100;
+                }
+    
+                
+            }
+    
+    
+            .similar-card--footer {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+    
+                button {
+                    background-color: black;
+                    color: white;
+                    padding: .9em 3em;
+                    border-radius: 10px;
+                    cursor: pointer;
+                }
+            }
+    
+        }
+    }
+}

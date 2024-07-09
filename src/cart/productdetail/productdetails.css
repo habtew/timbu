@@ -1,0 +1,213 @@
+/* general */
+* {
+    box-sizing: border-box;
+}
+.hr {
+    height: 1px;
+    width: 100%;
+    background-color: gray;
+    margin-block: 20px;
+}
+
+.product-details{
+    border: none;
+    padding: 30px;
+    border-radius: none;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    /* flex: 2; */
+    gap: 10px;
+    border: 1px solid black;
+    background-color: white;
+
+
+    .imgae--container {
+        display: flex;
+        max-width: 320px;
+        flex-direction: column;
+        gap: 10px;
+        .product-image {
+            max-width: 300px;
+            height: 300px;
+        }
+
+        .small--image--container {
+            display: flex;
+            justify-content: space-between;
+            padding: 1em;;
+
+            img {
+                width: 50px;
+                height: 60px;
+            }
+        }
+
+    }
+
+    
+    .product-info {
+        /* width: 400px; */
+        /* flex: 1; */
+        border-bottom: 1px solid gray;
+        
+        .tiitlee {
+            text-align: center;
+        }
+        
+        .price--contiainer {
+            
+        }
+        
+        .product-options {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+            .quantity{
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                .quant-cont {
+                    display: flex;
+                    
+                    button, div {
+                        width: 50px;
+                        border: 1px solid gray;
+                        padding: .7em;
+                        text-align: center;
+                    }
+
+                    button {
+                        background-color: black;
+                        color: white;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .size {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+
+                .size-options{
+                    display: flex;
+                    gap: 10px;
+    
+                    button {
+                        background-color: white;
+                        color: black;
+                        border: 1px solid gray;
+                        border-radius: 10px;
+                    }
+                }
+            }
+
+            .color {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+
+                .color-options {
+                    display: flex;
+                    gap: 10px;
+                    
+                    button {
+                        padding: 20px;
+                        border: 1px solid gray;
+                    }
+                }
+            }
+
+        }
+        .product-actions {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            button {
+                padding: 1em;
+                background-color: white;
+                color: black;
+                border: 1px solid black;
+                cursor: pointer;
+                border-radius: 20px;
+            }
+
+            .add-to-cart {
+                background-color: black;
+                color: white;
+            }
+        }
+
+        .share-product {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+
+            .btnss {
+                display: flex;
+                gap: 10px;
+                color: black;
+
+
+                img {
+                    background-color: black;
+
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 500px) {
+    .hr {
+        display: none;
+    }
+    .product-details{
+        border: 1px solid gray;
+        padding: 30px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        max-width: 700px;
+        gap: 20px;
+
+        .imgae--container {
+            width: 200px;
+            margin-right: 20px;
+            .product-image {
+                max-width: 300px;
+                height: 300px;
+            }
+        }
+        
+        .product-info {
+            width: 300px;
+
+            .tiitlee {
+                border-bottom: 1px solid gray;
+            }
+
+            .price--contiainer {
+                margin-block: 20px;
+                border-bottom: 1px solid gray;
+            }
+
+
+            .product-actions {
+                flex-direction: row;
+                justify-content: space-between;
+                margin-block: 20px;
+                button {
+                    width: 100%;
+                    padding: 0.5em 0.5em;
+                }
+            }
+            
+        }
+    }
+}
